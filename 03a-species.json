@@ -1,0 +1,110 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.species",
+    "description": "SysBio AD species required annotations schema",
+    "allOf": [
+        {
+            "properties": {
+                "species": {
+                    "$ref": "sage.annotations-experimentalData.species"
+                }
+            },
+            "required": [
+                "species"
+            ]
+        },
+        {
+            "if": {
+                "properties": {
+                    "species": {
+                        "enum": [
+                            "Human"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "properties": {
+                            "isCellLine": {
+                                "$ref": "sage.annotations-experimentalData.isCellLine"
+                            }
+                        },
+                        "required": [
+                            "isCellLine"
+                        ]
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "isCellLine": {
+                                   "enum": [ true ]
+                                }
+                            }
+                        },
+                        "then": {
+                            "properties": {
+                                "isMultiSpecimen": {
+                                    "$ref": "nkauer-ad.isMultiSpecimen.cellLine"
+                                }
+                            }
+                        },
+                        "else": {
+                            "properties": {    
+                                "isMultiSpecimen": {
+                                    "$ref": "nkauer-ad.isMultiSpecimen.Human"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "species": {
+                        "enum": [
+                            "Mouse"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "properties": {
+                            "isMultiSpecimen": {
+                                "$ref": "nkauer-ad.isMultiSpecimen.Mouse"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "species": {
+                        "enum": [
+                            "drosophila"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "properties": {
+                            "isMultiSpecimen": {
+                                "enum": [ true ]
+                            }
+                        },
+                        "required": ["isMultiSpecimen"]
+                    }
+                ]
+            }
+        }
+    ]
+}

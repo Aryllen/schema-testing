@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.assay",
+    "description": "SysBio AD required annotations by assay schema",
+    "allOf": [
+        {
+            "properties": {
+                "assay": {
+                    "$ref": "sage.annotations-experimentalData.assay"
+                }
+            },
+            "required": ["assay"]
+        },
+        {
+            "if": {
+                "properties": {
+                    "assay": {
+                        "enum": [
+                            "rnaSeq"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "$ref": "nkauer-ad.assay.rnaSeq"
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "resourceType": {
+                        "enum": [
+                            "16SrRNAseq"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "$ref": "nkauer-ad.assay.sixteenSrRNAseq"
+                    }
+                ]
+            }  
+        }
+    ]
+}

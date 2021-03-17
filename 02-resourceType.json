@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.resourceType",
+    "description": "SysBio AD required annotations by resourceType schema",
+    "allOf": [
+        {
+            "properties": {
+                "resourceType": {
+                    "$ref": "sage.annotations-sageCommunity.resourceType"
+                }
+            },
+            "required": [
+                "resourceType"
+            ]
+        },
+        {
+            "if": {
+                "properties": {
+                    "resourceType": {
+                        "enum": [
+                            "metadata"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "$ref": "nkauer-ad.metadata"
+                    },
+                    {
+                        "$ref": "nkauer-ad.species"
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "resourceType": {
+                        "enum": [
+                            "analysis"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "properties": {
+                            "assay": {
+                                "$ref": "sage.annotations-analysis.analysisType"
+                            }   
+                        },
+                        "required": [
+                            "analysisType"
+                        ]
+                    }
+                ]
+            }  
+        },
+        {
+            "if": {
+                "properties": {
+                    "resourceType": {
+                        "enum": [
+                            "experimentalData"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "properties": {
+                            "assay": {
+                                "$ref": "nkauer-ad.assay"
+                            }
+                        },
+                        "required": [
+                            "assay"
+                        ]
+                    },
+                    {
+                        "$ref": "nkauer-ad.species"
+                    }
+                ]
+            }  
+        }
+    ]
+}
