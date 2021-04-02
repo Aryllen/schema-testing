@@ -2,13 +2,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id":"nkauer-ad.species",
     "description": "SysBio AD species required annotations schema",
+    "type": "object",
+    "properties": {
+        "species": {
+            "$ref": "sage.annotations-experimentalData.species"
+        }
+    },
     "allOf": [
         {
-            "properties": {
-                "species": {
-                    "$ref": "sage.annotations-experimentalData.species"
-                }
-            },
             "required": [
                 "species"
             ]

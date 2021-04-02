@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.isMultiSpecimen.Human",
+    "description": "SysBio AD isMultiSpecimen required annotations schema for mouse data",
+    "type": "object",
+    "properties": {
+        "isMultiSpecimen": {
+            "$ref": "sage.annotations-experimentalData.isMultiSpecimen"
+        },
+        "specimenID": {
+            "$ref": "sage.annotations-experimentalData.specimenID"
+        },
+        "individualID": {
+            "$ref": "sage.annotations-experimentalData.individualID"
+        },
+        "sex": {
+            "$ref": "sage.annotations-experimentalData.sex"
+        }
+    },
+    "allOf": [
+        {
+            "required": [
+                "isMultiSpecimen"
+            ]
+        },
+        {
+            "if": {
+                "properties": {
+                    "isMultiSpecimen": {
+                        "enum": [ true ]
+                    }
+                }
+            },
+            "then": {
+                "required": [
+                    "individualID",
+                    "specimenID",
+                    "sex"
+                ]  
+            }
+        }
+    ]
+}

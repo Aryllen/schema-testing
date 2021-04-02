@@ -2,13 +2,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id":"nkauer-ad.resourceType",
     "description": "SysBio AD required annotations by resourceType schema",
-    "allOf": [
-        {
-            "properties": {
+    "type": "object",
+    "properties": {
                 "resourceType": {
                     "$ref": "sage.annotations-sageCommunity.resourceType"
                 }
             },
+    "allOf": [
+        {
             "required": [
                 "resourceType"
             ]

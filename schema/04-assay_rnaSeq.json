@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.assay.rnaSeq",
+    "description": "SysBio AD rnaSeq annotations schema",
+    "type": "object",
+    "properties": {
+        "items": {
+            "$ref": "nkauer-assay.rnaSeq"
+        },
+        "dataSubtype": {
+            "$ref": "sage.annotations-experimentalData.dataSubtype"
+        },
+        "dataType": {
+            "enum": [ "geneExpression" ]
+        }
+    },
+    "required": [
+        "platform",
+        "libraryPrep",
+        "readLength",
+        "runType",
+        "dataType",
+        "dataSubtype"
+    ]
+}

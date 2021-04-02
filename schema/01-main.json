@@ -2,13 +2,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id":"nkauer-ad.main",
     "description": "SysBio AD main required annotations schema",
+    "type": "object",
+    "properties": {
+        "study": {
+            "$ref": "sage.annotations-neuro.study"
+        }
+    },
     "allOf": [
         {
-            "properties": {
-                "study": {
-                    "$ref": "sage.annotations-neuro.study"
-                }
-            },
             "required": ["study"]
         },
         {

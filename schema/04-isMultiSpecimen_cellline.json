@@ -2,16 +2,17 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id":"nkauer-ad.isMultiSpecimen.cellLine",
     "description": "SysBio AD isMultiSpecimen required annotations schema for mouse data",
+    "type": "object",
+    "properties": {
+        "isMultiSpecimen": {
+            "$ref": "sage.annotations-experimentalData.isMultiSpecimen"
+        },
+        "specimenID": {
+            "$ref": "sage.annotations-experimentalData.specimenID"
+        }
+    },
     "allOf": [
         {
-            "properties": {
-                "isMultiSpecimen": {
-                    "$ref": "sage.annotations-experimentalData.isMultiSpecimen"
-                },
-                "specimenID": {
-                    "$ref": "sage.annotations-experimentalData.specimenID"
-                }
-            },
             "required": [
                 "isMultiSpecimen"
             ]

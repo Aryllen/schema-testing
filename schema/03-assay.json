@@ -2,13 +2,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id":"nkauer-ad.assay",
     "description": "SysBio AD required annotations by assay schema",
+    "type": "object",
+    "properties": {
+        "assay": {
+            "$ref": "sage.annotations-experimentalData.assay"
+        }
+    },
     "allOf": [
         {
-            "properties": {
-                "assay": {
-                    "$ref": "sage.annotations-experimentalData.assay"
-                }
-            },
             "required": ["assay"]
         },
         {
@@ -46,6 +47,42 @@
                     }
                 ]
             }  
+        },
+        {
+            "if": {
+                "properties": {
+                    "assay": {
+                        "enum": [
+                            "wholeGenomeSeq"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "$ref": "nkauer-ad.assay.wholeGenomeSeq"
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "assay": {
+                        "enum": [
+                            "TMTquantitation"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "$ref": "nkauer-ad.assay.TMTquantitation"
+                    }
+                ]
+            }
         }
     ]
 }

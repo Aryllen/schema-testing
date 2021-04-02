@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.metadata",
+    "description": "SysBio AD metadata annotations schema",
+    "type": "object",
+    "properties": {
+        "metadataType": {
+            "$ref": "sage.annotations-experimentalData.metadataType"
+        },
+        "dataType": {
+            "$ref": "sage.annotations-experimentalData.dataType"
+        },
+        "dataSubtype": {
+            "enum": [ "metadata" ]
+        }
+    },
+    "allOf": [
+        {
+            "required": [
+                "metadataType",
+                "dataSubtype",
+                "dataType"
+            ]
+        },
+        {
+            "if": {
+                "properties": {
+                    "metadataType": {
+                        "enum": [
+                            "individual",
+                            "biospecimen"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "allOf": [
+                    {
+                        "properties": {
+                            "dataType": {
+                                "enum": ["clinical"]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
