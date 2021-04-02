@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-assay.TMTquantitation",
+    "description": "SysBio TMTquantitation (aka proteomics) metadata template schema",
+    "type": "object",
+    "properties": {
+        "specimenID": {
+            "$ref": "sage.annotations-experimentalData.specimenID"
+        },
+        "assay": {
+            "$ref": "sage.annotations-experimentalData.assay"
+        },
+        "platform": {
+            "$ref": "sage.annotations-experimentalData.platform"
+        },
+        "controlType": {
+            "$ref": "sage.annotations-experimentalData.controlType"
+        },
+        "batch": {
+            "$ref": "sage.annotations-batch.batch"
+        },
+        "batchChannel": {
+            "$ref": "sage.annotations-batch.batchChannel"
+        },
+        "TMTType": {
+            "$ref": "sage.annotations-experimentalData.TMTType"
+        },
+        "fragmentation": {
+            "$ref": "sage.annotations-experimentalData.fragmentation"
+        },
+        "resolution": {
+            "$ref": "sage.annotations-experimentalData.resolution"
+        },
+        "multiconsensusStudyFileID": {
+            "$ref": "sage.annotations-experimentalData.multiconsensusStudyFileID"
+        }
+    }
+}

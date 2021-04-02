@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.assay.TMTquantitation",
+    "description": "SysBio AD TMTquantitation annotations schema",
+    "type": "object",
+    "properties": {
+        "items": {
+            "$ref": "nkauer-assay.TMTquantitation"
+        },
+        "dataSubtype": {
+            "$ref": "sage.annotations-experimentalData.dataSubtype"
+        },
+        "dataType": {
+            "enum": [ "proteomics" ]
+        }
+    },
+    "required": [
+        "platform",
+        "batch",
+        "dataType",
+        "dataSubtype"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"nkauer-ad.assay.wholeGenomeSeq",
+    "description": "SysBio AD wholeGenomeSeq annotations schema",
+    "type": "object",
+    "properties": {
+        "items": {
+            "$ref": "nkauer-assay.wholeGenomeSeq"
+        },
+        "dataSubtype": {
+            "$ref": "sage.annotations-experimentalData.dataSubtype"
+        },
+        "dataType": {
+            "enum": [ "genomicVariants" ]
+        }
+    },
+    "required": [
+        "platform",
+        "libraryPrep",
+        "readLength",
+        "runType",
+        "nucleicAcidSource",
+        "dataType",
+        "dataSubtype"
+    ]
+}
