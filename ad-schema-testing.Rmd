@@ -9,11 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Overview
-
-
-
-
 ## Requirements & Helper Functions
 
 ### Schema Registration
