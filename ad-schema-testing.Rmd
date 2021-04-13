@@ -2,7 +2,7 @@
 title: "AD Annotation Schema Testing"
 author: "Nicole Kauer"
 date: "4/1/2021"
-output: html_document
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
