@@ -1,0 +1,21 @@
+{
+    "objectId": [
+        "syn25421327"
+    ],
+    "objectType": [
+        "entity"
+    ],
+    "objectEtag": [
+        "921d1c59-f7b5-4ce6-a03f-8165641f1a08"
+    ],
+    "schema$id": [
+        "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/nkauer-ad.main"
+    ],
+    "isValid": [
+        true
+    ],
+    "validatedOn": [
+        "2021-04-09T12:24:37.308Z"
+    ]
+}
+

@@ -32,7 +32,7 @@ install.packages(c("purrr", "glue", "reticulate", "here"))
 ```
 
 Import libraries.
-```{r libraries, message=FALSE, eval=FALSE}
+```{r libraries, message=FALSE}
 library("purrr")
 library("glue")
 library("reticulate")
@@ -137,7 +137,7 @@ register_and_report <- function(syn, file, dryRun = FALSE) {
 
 Import the `synapseclient` and log into Synapse.
 
-```{r synapse, eval=FALSE}
+```{r synapse}
 ## Log in to synapse
 synapse <- import("synapseclient")
 syn <- synapse$Synapse()
@@ -304,3 +304,99 @@ any(is_valid)
 ```
 
 Parsing the returned validation results for invalid annotations is left as an exercise...
+
+### Validation Examples
+
+Below are some validation examples, but first is a function to simplify printing the results to a file.
+
+```{r print}
+#' Output json validation results to file
+#' @param path File location to write to
+#' @param results Results from Synapse validation
+output_validation_file <- function(path, results) {
+  json_string <- jsonlite::prettify(jsonlite::toJSON(results))
+  write(json_string, file = path)
+}
+```
+#### No schema bound
+
+This file has no schema associated with it. Asking for validation results causes an error.
+
+```{r example1}
+## Example 1
+no_schema_results <- tryCatch(
+  {
+    get_validation_results(syn, "syn25421195") 
+  },
+  error = function(e) {
+    print(e$message)
+  }
+)
+```
+
+#### Valid vs Invalid with Enumerated Values
+
+The following two files are associated with the large AD test schema, but have short paths, making them relatively simple. They only have 4 required annotations, *consortium*, *study*, *resourceType*, and *fileFormat*. Their path is guided purely by *resourceType* value of _tool_. However, this looks complex when a single enumerated value is wrong. In the invalid case, the value _neato_ for *fileFormat* is not acceptable.
+
+```{r example2, eval=FALSE}
+## Example 2
+valid_results <- get_validation_results(syn, "syn25421327")
+output_validation_file(
+  here("validation_results", "example2_valid.json"),
+  valid_results
+)
+
+invalid_results <- get_validation_results(syn, "syn25532081")
+output_validation_file(
+  here("validation_results", "example2_invalid.json"),
+  invalid_results
+)
+```
+
+#### Simple Invalid Case
+
+The following example has a simple schema that only requires *waterpH*, which has an allowed range of 0-14. The annotation is set to 42.
+
+```{r example3, eval=FALSE}
+## Example 3
+invalid_results <- get_validation_results(syn, "syn25486167")
+output_validation_file(
+  here("validation_results", "example3_invalid.json"),
+  invalid_results
+)
+```
+
+#### Slightly Complex Invalid Case -- Due to Bad Schema
+
+The following file is associated with the large test AD schema. This file still has a relatively short path based on the *resourceType* value of _metadata_. The annotations are all correct, but the logic is not quite right for working with schema. In this case, it thinks *isMultiSpecimen* should be an object and it doesn't like how I'm trying to check if *isCellLine* is _false_. While this is a bad schema design, the complexity of validation results is still relevant. This is only for two problems in a relatively short path.
+
+```{r example4, eval=FALSE}
+## Example 4
+invalid_results <- get_validation_results(syn, "syn25421297")
+output_validation_file(
+  here("validation_results", "example4_invalid.json"),
+  invalid_results
+)
+```
+
+
+
+```{r staging_endpoints, include=FALSE, message=FALSE, eval=FALSE}
+syn$setEndpoints(
+  repoEndpoint=synapse$client$STAGING_ENDPOINTS$repoEndpoint,
+  authEndpoint=synapse$client$STAGING_ENDPOINTS$authEndpoint,
+  fileHandleEndpoint=synapse$client$STAGING_ENDPOINTS$fileHandleEndpoint,
+  portalEndpoint=synapse$client$STAGING_ENDPOINTS$portalEndpoint
+)
+
+```
+
+```{r production_endpoints, include=FALSE, message=FALSE, eval=FALSE}
+syn$setEndpoints(
+  repoEndpoint=synapse$client$PRODUCTION_ENDPOINTS$repoEndpoint,
+  authEndpoint=synapse$client$PRODUCTION_ENDPOINTS$authEndpoint,
+  fileHandleEndpoint=synapse$client$PRODUCTION_ENDPOINTS$fileHandleEndpoint,
+  portalEndpoint=synapse$client$PRODUCTION_ENDPOINTS$portalEndpoint
+)
+
+```

@@ -1,0 +1,242 @@
+{
+    "objectId": [
+        "syn25421297"
+    ],
+    "objectType": [
+        "entity"
+    ],
+    "objectEtag": [
+        "9dcf10a7-2ee2-4400-ba7a-ba9b8fbc11ce"
+    ],
+    "schema$id": [
+        "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/nkauer-ad.main"
+    ],
+    "isValid": [
+        false
+    ],
+    "validatedOn": [
+        "2021-04-13T23:34:33.207Z"
+    ],
+    "validationErrorMessage": [
+        "#: only 1 subschema matches out of 2"
+    ],
+    "allValidationMessages": [
+        "#/isCellLine: false is not a valid enum value",
+        "#/isMultiSpecimen: expected type: JSONObject, found: Boolean"
+    ],
+    "validationException": {
+        "keyword": [
+            "allOf"
+        ],
+        "pointerToViolation": [
+            "#"
+        ],
+        "message": [
+            "#: only 1 subschema matches out of 2"
+        ],
+        "schemaLocation": [
+            "#"
+        ],
+        "causingExceptions": [
+            {
+                "keyword": [
+                    "allOf"
+                ],
+                "pointerToViolation": [
+                    "#"
+                ],
+                "message": [
+                    "#: only 2 subschema matches out of 3"
+                ],
+                "causingExceptions": [
+                    {
+                        "keyword": [
+                            "allOf"
+                        ],
+                        "pointerToViolation": [
+                            "#"
+                        ],
+                        "message": [
+                            "#: only 1 subschema matches out of 2"
+                        ],
+                        "schemaLocation": [
+                            "#/definitions/nkauer-ad.resourceType"
+                        ],
+                        "causingExceptions": [
+                            {
+                                "keyword": [
+                                    "allOf"
+                                ],
+                                "pointerToViolation": [
+                                    "#"
+                                ],
+                                "message": [
+                                    "#: only 3 subschema matches out of 4"
+                                ],
+                                "causingExceptions": [
+                                    {
+                                        "keyword": [
+                                            "then"
+                                        ],
+                                        "pointerToViolation": [
+                                            "#"
+                                        ],
+                                        "message": [
+                                            "input is invalid against the \"then\" schema"
+                                        ],
+                                        "schemaLocation": [
+                                            "#/definitions/nkauer-ad.resourceType/allOf/1"
+                                        ],
+                                        "causingExceptions": [
+                                            {
+                                                "keyword": [
+                                                    "allOf"
+                                                ],
+                                                "pointerToViolation": [
+                                                    "#"
+                                                ],
+                                                "message": [
+                                                    "#: only 1 subschema matches out of 2"
+                                                ],
+                                                "schemaLocation": [
+                                                    "#/definitions/nkauer-ad.resourceType/allOf/1/then"
+                                                ],
+                                                "causingExceptions": [
+                                                    {
+                                                        "keyword": [
+                                                            "allOf"
+                                                        ],
+                                                        "pointerToViolation": [
+                                                            "#"
+                                                        ],
+                                                        "message": [
+                                                            "#: only 1 subschema matches out of 2"
+                                                        ],
+                                                        "schemaLocation": [
+                                                            "#/definitions/nkauer-ad.species"
+                                                        ],
+                                                        "causingExceptions": [
+                                                            {
+                                                                "keyword": [
+                                                                    "allOf"
+                                                                ],
+                                                                "pointerToViolation": [
+                                                                    "#"
+                                                                ],
+                                                                "message": [
+                                                                    "#: only 3 subschema matches out of 4"
+                                                                ],
+                                                                "causingExceptions": [
+                                                                    {
+                                                                        "keyword": [
+                                                                            "then"
+                                                                        ],
+                                                                        "pointerToViolation": [
+                                                                            "#"
+                                                                        ],
+                                                                        "message": [
+                                                                            "input is invalid against the \"then\" schema"
+                                                                        ],
+                                                                        "schemaLocation": [
+                                                                            "#/definitions/nkauer-ad.species/allOf/1"
+                                                                        ],
+                                                                        "causingExceptions": [
+                                                                            {
+                                                                                "keyword": [
+                                                                                    "allOf"
+                                                                                ],
+                                                                                "pointerToViolation": [
+                                                                                    "#"
+                                                                                ],
+                                                                                "message": [
+                                                                                    "#: only 1 subschema matches out of 2"
+                                                                                ],
+                                                                                "schemaLocation": [
+                                                                                    "#/definitions/nkauer-ad.species/allOf/1/then"
+                                                                                ],
+                                                                                "causingExceptions": [
+                                                                                    {
+                                                                                        "keyword": [
+                                                                                            "else"
+                                                                                        ],
+                                                                                        "pointerToViolation": [
+                                                                                            "#"
+                                                                                        ],
+                                                                                        "message": [
+                                                                                            "input is invalid against both the \"if\" and \"else\" schema"
+                                                                                        ],
+                                                                                        "schemaLocation": [
+                                                                                            "#/definitions/nkauer-ad.species/allOf/1/then/allOf/1"
+                                                                                        ],
+                                                                                        "causingExceptions": [
+                                                                                            {
+                                                                                                "keyword": [
+                                                                                                    "enum"
+                                                                                                ],
+                                                                                                "pointerToViolation": [
+                                                                                                    "#/isCellLine"
+                                                                                                ],
+                                                                                                "message": [
+                                                                                                    "false is not a valid enum value"
+                                                                                                ],
+                                                                                                "schemaLocation": [
+                                                                                                    "#/definitions/nkauer-ad.species/allOf/1/then/allOf/1/if/properties/isCellLine"
+                                                                                                ],
+                                                                                                "causingExceptions": [
+
+                                                                                                ]
+                                                                                            },
+                                                                                            {
+                                                                                                "keyword": [
+                                                                                                    "allOf"
+                                                                                                ],
+                                                                                                "pointerToViolation": [
+                                                                                                    "#/isMultiSpecimen"
+                                                                                                ],
+                                                                                                "message": [
+                                                                                                    "#: only 1 subschema matches out of 2"
+                                                                                                ],
+                                                                                                "schemaLocation": [
+                                                                                                    "#/definitions/nkauer-ad.isMultiSpecimen.Human"
+                                                                                                ],
+                                                                                                "causingExceptions": [
+                                                                                                    {
+                                                                                                        "keyword": [
+                                                                                                            "type"
+                                                                                                        ],
+                                                                                                        "pointerToViolation": [
+                                                                                                            "#/isMultiSpecimen"
+                                                                                                        ],
+                                                                                                        "message": [
+                                                                                                            "expected type: JSONObject, found: Boolean"
+                                                                                                        ],
+                                                                                                        "causingExceptions": [
+
+                                                                                                        ]
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+

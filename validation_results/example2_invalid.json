@@ -1,0 +1,1601 @@
+{
+    "objectId": [
+        "syn25532081"
+    ],
+    "objectType": [
+        "entity"
+    ],
+    "objectEtag": [
+        "32b88951-e635-42f8-85dc-956706e53858"
+    ],
+    "schema$id": [
+        "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/nkauer-ad.main"
+    ],
+    "isValid": [
+        false
+    ],
+    "validatedOn": [
+        "2021-04-13T22:56:45.722Z"
+    ],
+    "validationErrorMessage": [
+        "#: only 1 subschema matches out of 2"
+    ],
+    "allValidationMessages": [
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: ",
+        "#/fileFormat: "
+    ],
+    "validationException": {
+        "keyword": [
+            "allOf"
+        ],
+        "pointerToViolation": [
+            "#"
+        ],
+        "message": [
+            "#: only 1 subschema matches out of 2"
+        ],
+        "schemaLocation": [
+            "#"
+        ],
+        "causingExceptions": [
+            {
+                "keyword": [
+                    "allOf"
+                ],
+                "pointerToViolation": [
+                    "#"
+                ],
+                "message": [
+                    "#: only 2 subschema matches out of 3"
+                ],
+                "causingExceptions": [
+                    {
+                        "keyword": [
+                            "anyOf"
+                        ],
+                        "pointerToViolation": [
+                            "#/fileFormat"
+                        ],
+                        "message": [
+                            "#: no subschema matched out of the total 85 subschemas"
+                        ],
+                        "schemaLocation": [
+                            "#/definitions/sage.annotations-sageCommunity.fileFormat"
+                        ],
+                        "causingExceptions": [
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/0"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/1"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/2"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/3"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/4"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/5"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/6"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/7"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/8"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/9"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/10"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/11"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/12"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/13"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/14"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/15"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/16"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/17"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/18"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/19"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/20"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/21"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/22"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/23"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/24"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/25"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/26"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/27"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/28"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/29"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/30"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/31"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/32"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/33"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/34"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/35"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/36"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/37"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/38"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/39"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/40"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/41"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/42"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/43"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/44"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/45"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/46"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/47"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/48"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/49"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/50"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/51"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/52"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/53"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/54"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/55"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/56"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/57"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/58"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/59"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/60"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/61"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/62"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/63"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/64"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/65"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/66"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/67"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/68"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/69"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/70"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/71"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/72"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/73"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/74"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/75"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/76"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/77"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/78"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/79"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/80"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/81"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/82"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/83"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            },
+                            {
+                                "keyword": [
+                                    "const"
+                                ],
+                                "pointerToViolation": [
+                                    "#/fileFormat"
+                                ],
+                                "message": [
+                                    ""
+                                ],
+                                "schemaLocation": [
+                                    "#/definitions/sage.annotations-sageCommunity.fileFormat/anyOf/84"
+                                ],
+                                "causingExceptions": [
+
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+
