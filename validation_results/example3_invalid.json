@@ -1,0 +1,44 @@
+{
+    "objectId": [
+        "syn25486167"
+    ],
+    "objectType": [
+        "entity"
+    ],
+    "objectEtag": [
+        "2f23ce35-31b0-406e-875f-2cc677a196ca"
+    ],
+    "schema$id": [
+        "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/nkauer-test.min.max"
+    ],
+    "isValid": [
+        false
+    ],
+    "validatedOn": [
+        "2021-04-13T23:24:41.733Z"
+    ],
+    "validationErrorMessage": [
+        "42.0 is not less or equal to 14"
+    ],
+    "allValidationMessages": [
+        "#/waterpH: 42.0 is not less or equal to 14"
+    ],
+    "validationException": {
+        "keyword": [
+            "maximum"
+        ],
+        "pointerToViolation": [
+            "#/waterpH"
+        ],
+        "message": [
+            "42.0 is not less or equal to 14"
+        ],
+        "schemaLocation": [
+            "#/definitions/nkauer-waterpH"
+        ],
+        "causingExceptions": [
+
+        ]
+    }
+}
+
