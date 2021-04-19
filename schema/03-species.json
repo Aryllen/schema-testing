@@ -3,24 +3,20 @@
     "$id":"nkauer-ad.species",
     "description": "SysBio AD species required annotations schema",
     "type": "object",
-    "properties": {
-        "species": {
-            "$ref": "sage.annotations-experimentalData.species"
-        }
-    },
     "allOf": [
         {
-            "required": [
-                "species"
-            ]
+            "properties": {
+                "species": {
+                    "$ref": "sage.annotations-experimentalData.species"
+                }
+            },
+            "required": [ "species" ]
         },
         {
             "if": {
                 "properties": {
                     "species": {
-                        "enum": [
-                            "Human"
-                        ]
+                        "const": [ "Human" ]
                     }
                 }
             },
@@ -32,15 +28,13 @@
                                 "$ref": "sage.annotations-experimentalData.isCellLine"
                             }
                         },
-                        "required": [
-                            "isCellLine"
-                        ]
+                        "required": [ "isCellLine" ]
                     },
                     {
                         "if": {
                             "properties": {
                                 "isCellLine": {
-                                   "enum": [ true ]
+                                   "const": [ true ]
                                 }
                             }
                         },
@@ -66,7 +60,7 @@
             "if": {
                 "properties": {
                     "species": {
-                        "enum": [
+                        "const": [
                             "Mouse"
                         ]
                     }
@@ -88,9 +82,7 @@
             "if": {
                 "properties": {
                     "species": {
-                        "enum": [
-                            "drosophila"
-                        ]
+                        "const": [ "drosophila" ]
                     }
                 }
             },
@@ -99,10 +91,10 @@
                     {
                         "properties": {
                             "isMultiSpecimen": {
-                                "enum": [ true ]
+                                "const": [ true ]
                             }
                         },
-                        "required": ["isMultiSpecimen"]
+                        "required": [ "isMultiSpecimen" ]
                     }
                 ]
             }

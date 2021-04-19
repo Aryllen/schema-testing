@@ -3,19 +3,19 @@
     "$id":"nkauer-ad.metadata",
     "description": "SysBio AD metadata annotations schema",
     "type": "object",
-    "properties": {
-        "metadataType": {
-            "$ref": "sage.annotations-experimentalData.metadataType"
-        },
-        "dataType": {
-            "$ref": "sage.annotations-experimentalData.dataType"
-        },
-        "dataSubtype": {
-            "enum": [ "metadata" ]
-        }
-    },
     "allOf": [
         {
+            "properties": {
+                "metadataType": {
+                    "$ref": "sage.annotations-experimentalData.metadataType"
+                },
+                "dataType": {
+                    "$ref": "sage.annotations-experimentalData.dataType"
+                },
+                "dataSubtype": {
+                    "const": [ "metadata" ]
+                }
+            },
             "required": [
                 "metadataType",
                 "dataSubtype",
@@ -34,15 +34,12 @@
                 }
             },
             "then": {
-                "allOf": [
-                    {
-                        "properties": {
-                            "dataType": {
-                                "enum": ["clinical"]
-                            }
-                        }
+                "properties": {
+                    "dataType": {
+                        "const": ["clinical"]
                     }
-                ]
+                },
+                "required": "dataType"
             }
         }
     ]

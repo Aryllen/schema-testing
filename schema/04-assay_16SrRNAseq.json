@@ -3,29 +3,35 @@
     "$id":"nkauer-ad.assay.sixteenSrRNAseq",
     "description": "SysBio AD 16SrRNAseq annotation schema",
     "type": "object",
-    "properties": {
-        "items": {
+    "allOf": [
+        {
             "$ref": "nkauer-assay.sixteenSrRNAseq"
         },
-        "organ": {
-            "$ref": "sage.annotations-experimentalData.organ"
+        {
+            "properties": {          
+                "organ": {
+                    "$ref": "sage.annotations-experimentalData.organ"
+                },
+                "tissue": {
+                    "$ref": "sage.annotations-experimentalData.tissue"
+                },
+                "dataType": {
+                    "enum": [ "geneExpression" ]
+                },
+                "dataSubtype": {
+                    "$ref": "sage.annotations-experimentalData.dataSubtype"
+                }
+            }
         },
-        "tissue": {
-            "$ref": "sage.annotations-experimentalData.tissue"
-        },
-        "dataType": {
-            "enum": [ "geneExpression" ]
-        },
-        "dataSubtype": {
-            "$ref": "sage.annotations-experimentalData.dataSubtype"
-        }   
-    },
-    "required": [
-        "platform",
-        "libraryPrep",
-        "organ",
-        "tissue",
-        "dataType",
-        "dataSubtype"
+        {
+            "required": [
+                "platform",
+                "libraryPrep",
+                "organ",
+                "tissue",
+                "dataType",
+                "dataSubtype"
+            ]
+        }
     ]
 }

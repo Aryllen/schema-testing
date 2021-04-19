@@ -3,21 +3,27 @@
     "$id":"nkauer-ad.assay.TMTquantitation",
     "description": "SysBio AD TMTquantitation annotations schema",
     "type": "object",
-    "properties": {
-        "items": {
+    "allOf": [
+        {
             "$ref": "nkauer-assay.TMTquantitation"
         },
-        "dataSubtype": {
-            "$ref": "sage.annotations-experimentalData.dataSubtype"
+        {
+            "properties": {
+                "dataSubtype": {
+                    "$ref": "sage.annotations-experimentalData.dataSubtype"
+                },
+                "dataType": {
+                    "const": [ "proteomics" ]
+                }
+            }
         },
-        "dataType": {
-            "enum": [ "proteomics" ]
+        {
+            "required": [
+                "platform",
+                "batch",
+                "dataType",
+                "dataSubtype"
+            ]
         }
-    },
-    "required": [
-        "platform",
-        "batch",
-        "dataType",
-        "dataSubtype"
     ]
 }

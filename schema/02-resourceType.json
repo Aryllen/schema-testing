@@ -3,13 +3,13 @@
     "$id":"nkauer-ad.resourceType",
     "description": "SysBio AD required annotations by resourceType schema",
     "type": "object",
-    "properties": {
+    "allOf": [
+        {
+            "properties": {
                 "resourceType": {
                     "$ref": "sage.annotations-sageCommunity.resourceType"
                 }
             },
-    "allOf": [
-        {
             "required": [
                 "resourceType"
             ]
@@ -18,7 +18,7 @@
             "if": {
                 "properties": {
                     "resourceType": {
-                        "enum": [
+                        "const": [
                             "metadata"
                         ]
                     }
@@ -39,7 +39,7 @@
             "if": {
                 "properties": {
                     "resourceType": {
-                        "enum": [
+                        "const": [
                             "analysis"
                         ]
                     }
@@ -49,7 +49,7 @@
                 "allOf": [
                     {
                         "properties": {
-                            "assay": {
+                            "analysisType": {
                                 "$ref": "sage.annotations-analysis.analysisType"
                             }   
                         },
@@ -64,7 +64,7 @@
             "if": {
                 "properties": {
                     "resourceType": {
-                        "enum": [
+                        "const": [
                             "experimentalData"
                         ]
                     }
@@ -73,14 +73,7 @@
             "then": {
                 "allOf": [
                     {
-                        "properties": {
-                            "assay": {
-                                "$ref": "nkauer-ad.assay"
-                            }
-                        },
-                        "required": [
-                            "assay"
-                        ]
+                        "$ref": "nkauer-ad.assay"
                     },
                     {
                         "$ref": "nkauer-ad.species"

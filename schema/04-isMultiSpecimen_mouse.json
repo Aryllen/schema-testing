@@ -3,25 +3,25 @@
     "$id":"nkauer-ad.isMultiSpecimen.Mouse",
     "description": "SysBio AD isMultiSpecimen required annotations schema for mouse data",
     "type": "object",
-    "properties": {
-        "isMultiSpecimen": {
-            "$ref": "sage.annotations-experimentalData.isMultiSpecimen"
-        },
-        "specimenID": {
-            "$ref": "sage.annotations-experimentalData.specimenID"
-        },
-        "individualID": {
-            "$ref": "sage.annotations-experimentalData.individualID"
-        },
-        "sex": {
-            "$ref": "sage.annotations-experimentalData.sex"
-        },
-        "modelSystemName": {
-            "$ref": "sage.annotations-neuro.modelSystemName"
-        }
-    },
     "allOf": [
         {
+            "properties": {
+                "isMultiSpecimen": {
+                    "$ref": "sage.annotations-experimentalData.isMultiSpecimen"
+                },
+                "specimenID": {
+                    "$ref": "sage.annotations-experimentalData.specimenID"
+                },
+                "individualID": {
+                    "$ref": "sage.annotations-experimentalData.individualID"
+                },
+                "sex": {
+                    "$ref": "sage.annotations-experimentalData.sex"
+                },
+                "modelSystemName": {
+                    "$ref": "sage.annotations-neuro.modelSystemName"
+                }
+            },
             "required": [
                 "isMultiSpecimen",
                 "modelSystemName"
@@ -31,30 +31,26 @@
             "if": {
                 "properties": {
                     "isMultiSpecimen": {
-                        "enum": [ true ]
+                        "const": [ true ]
                     }
                 }
             },
             "then": {
-                "allOf": [
-                    {
-                        "properties": {
-                            "specimenID": {
-                                "$ref": "sage.annotations-experimentalData.specimenID"
-                            },
-                            "individualID": {
-                                "$ref": "sage.annotations-experimentalData.individualID"
-                            },
-                            "sex": {
-                                "$ref": "sage.annotations-experimentalData.sex"
-                            }
-                        },
-                        "required": [
-                            "specimenID",
-                            "individualID",
-                            "sex"
-                        ]
+                "properties": {
+                    "specimenID": {
+                        "$ref": "sage.annotations-experimentalData.specimenID"
+                    },
+                    "individualID": {
+                        "$ref": "sage.annotations-experimentalData.individualID"
+                    },
+                    "sex": {
+                        "$ref": "sage.annotations-experimentalData.sex"
                     }
+                },
+                "required": [
+                    "specimenID",
+                    "individualID",
+                    "sex"
                 ]
             }
         }
