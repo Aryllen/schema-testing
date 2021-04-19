@@ -3,23 +3,29 @@
     "$id":"nkauer-ad.assay.rnaSeq",
     "description": "SysBio AD rnaSeq annotations schema",
     "type": "object",
-    "properties": {
-        "items": {
+    "allOf": [
+        {
             "$ref": "nkauer-assay.rnaSeq"
         },
-        "dataSubtype": {
-            "$ref": "sage.annotations-experimentalData.dataSubtype"
+        {
+            "properties": {
+                "dataSubtype": {
+                    "$ref": "sage.annotations-experimentalData.dataSubtype"
+                },
+                "dataType": {
+                    "const": [ "geneExpression" ]
+                }
+            }
         },
-        "dataType": {
-            "enum": [ "geneExpression" ]
+        {
+            "required": [
+                "platform",
+                "libraryPrep",
+                "readLength",
+                "runType",
+                "dataType",
+                "dataSubtype"
+            ]
         }
-    },
-    "required": [
-        "platform",
-        "libraryPrep",
-        "readLength",
-        "runType",
-        "dataType",
-        "dataSubtype"
     ]
 }

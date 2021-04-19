@@ -3,24 +3,30 @@
     "$id":"nkauer-ad.assay.wholeGenomeSeq",
     "description": "SysBio AD wholeGenomeSeq annotations schema",
     "type": "object",
-    "properties": {
-        "items": {
+    "allOf": [
+        {
             "$ref": "nkauer-assay.wholeGenomeSeq"
         },
-        "dataSubtype": {
-            "$ref": "sage.annotations-experimentalData.dataSubtype"
+        {
+            "properties": {
+                "dataSubtype": {
+                    "$ref": "sage.annotations-experimentalData.dataSubtype"
+                },
+                "dataType": {
+                    "const": [ "genomicVariants" ]
+                }
+            }
         },
-        "dataType": {
-            "enum": [ "genomicVariants" ]
+        {
+            "required": [
+                "platform",
+                "libraryPrep",
+                "readLength",
+                "runType",
+                "nucleicAcidSource",
+                "dataType",
+                "dataSubtype"
+            ]
         }
-    },
-    "required": [
-        "platform",
-        "libraryPrep",
-        "readLength",
-        "runType",
-        "nucleicAcidSource",
-        "dataType",
-        "dataSubtype"
     ]
 }

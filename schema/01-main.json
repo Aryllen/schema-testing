@@ -3,13 +3,13 @@
     "$id":"nkauer-ad.main",
     "description": "SysBio AD main required annotations schema",
     "type": "object",
-    "properties": {
-        "study": {
-            "$ref": "sage.annotations-neuro.study"
-        }
-    },
     "allOf": [
         {
+            "properties": {
+                "study": {
+                    "$ref": "sage.annotations-neuro.study"
+                }
+            },
             "required": ["study"]
         },
         {
